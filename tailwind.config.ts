@@ -5,7 +5,7 @@ const config = {
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx,css}",
     "./src/**/*.{ts,tsx}",
     "./constants/**/*.{ts,tsx}",
   ],
@@ -102,7 +102,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-  }
+  },
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
 export default config;
